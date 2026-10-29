@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <div>
+        <h1>Registro de usuarios</h1>
+        <form action="/registro" method "POST">
+            <label>Nombre(s): </label>
+            <input type="text" name="nombre">
+            <label>Apellido paterno: </label>
+            <input type="text" name="apellid_p">
+            <label>Apellido materno: </label>
+            <input type="text" name="apellido_m">
+            <label>Correo: </label>
+            <input type="email" name="correo">
+            <label>Contraseña</label>
+            <input type="password" name="password">
+            <label> for="id_rol">Rol:</label>
+            <select name="id_rol" id="">
+                <option value="1">Administrador</option>
+                <option value="2">Usuario</option>
+            </select>
+            <button type="submit"></button>
+
+        </form>
+        <p><a> href="{{url_for('login')}}>REGRESAR</a></p>
+    </div>
+</body>
+</html>
